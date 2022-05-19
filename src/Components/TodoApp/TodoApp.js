@@ -17,6 +17,11 @@ function TodoApp() {
     setTodo("")
   }
 
+  function deleteTodo(id) {
+    const updatedTodos = [...todos].filter((todo) => todo.id !== id);
+    setTodos(updatedTodos);
+  }
+
   return (
     <div className="TodoApp">
         <h1>Todo app</h1>
@@ -26,6 +31,9 @@ function TodoApp() {
       </form>
       {todos.map((todo) => <div key={todo.id}>
           <div>{todo.text}</div>
+
+          <button onClick={() => deleteTodo(todo.id)}>Delete item</button>
+
       </div>)}
     </div>
   );

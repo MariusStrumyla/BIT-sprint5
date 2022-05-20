@@ -31,9 +31,9 @@
 - clone my project using this link: git clone https://github.com/MariusStrumyla/BIT-sprint5.git
 - open terminal in code editor and install some packages:
 
-* npm install;
-* npm install bootstrap;
-* npm install react-router-dom@6
+   * npm install;
+   * npm install bootstrap;
+   * npm install react-router-dom@6
 
 - then start the project via terminal using command: npm start
 
